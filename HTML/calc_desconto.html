@@ -3,17 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="script_cal.js" defer></script>
-    <link rel="stylesheet" href="style.css">
-    <title>Calculadora de Restalrante</title>
+    <script src="../js/script_cal.js" defer></script>
+    <link rel="stylesheet" href="../CSS/style.css">
+    
+    <title>calculadora de desconto</title>
 </head>
 <body>
-  <h1> Calculadora de Restalrante</h1>  
+  <h1> Calculadora de desconto</h1>  
   <form>
-
+    Produto:<input type="text" id="Produto"><br>
     Valor:<input type="text" id="Valor"><br>
-    Numero de pessoas:<input type="number" step="1" id="pessoas"><br>
-    <input type="submit" value="Calcular" onclick="calc_Restaurante()">
+    Desconto:<input type="number" step="5" id="Desconto"><br>
+    <input type="submit" value="Calcular" onclick="Calcular()">
     <input type="reset" value="Limpar">
   </form>
   <div>

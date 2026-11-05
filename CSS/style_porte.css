@@ -1,0 +1,124 @@
+
+/* CONFIGURAÇÕES GERAIS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    background-color: #F5F0E8;
+    color: #514638;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* CABEÇALHO */
+header {
+    background-color: #E8DDCC;
+    padding: 35px 20px;
+    text-align: center;
+    border-bottom: 2px solid #D6C5AD;
+}
+
+header h1 {
+    font-size: 50px;
+    font-family: Georgia;
+    color: #5B4938;
+    letter-spacing: 1px;
+}
+
+/* CONTEÚDO PRINCIPAL */
+main {
+    flex: 1;
+    max-width: 1000px;
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 30px;
+    align-items: center;
+}
+
+/* TÍTULOS DOS PROJETOS */
+main h3 {
+    display: none;
+}
+
+/* LINKS DOS PROJETOS */
+main a {
+    background-color: #FFFDF9;
+    padding: 25px;
+    border-radius: 18px;
+    border: 1px solid #E3D5C2;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 5px 15px rgba(91, 73, 56, 0.08);
+    transition: 0.3s ease;
+}
+
+/* IMAGENS */
+main img {
+    width: 150px;
+    height: 200px;
+    object-fit: contain;
+    border-radius: 10px;
+}
+
+/* EFEITO AO PASSAR O MOUSE */
+main a:hover {
+    transform: translateY(-8px);
+    box-shadow: 0 10px 22px rgba(91, 73, 56, 0.15);
+    border-color: #BCA58A;
+}
+
+/* RODAPÉ */
+footer {
+    background-color: #E8DDCC;
+    color: #6B5947;
+    text-align: center;
+    padding: 22px;
+    margin-top: auto;
+    border-top: 1px solid #D6C5AD;
+}
+
+footer p {
+    font-size: 14px;
+}
+
+/* RESPONSIVIDADE */
+@media (max-width: 600px) {
+    header h1 {
+        font-size: 24px;
+    }
+
+    main {
+        grid-template-columns: 1fr;
+        margin: 30px auto;
+    }
+}
+.projeto {
+    background-color: #FFFDF9;
+    padding: 25px;
+    border-radius: 18px;
+    text-align: center;
+    border: 1px solid #E3D5C2;
+    box-shadow: 0 5px 15px rgba(91, 73, 56, 0.08);
+}
+
+.projeto h3 {
+    display: block;
+    margin-bottom: 20px;
+    color: #6B5947;
+    font-size: 19px;
+}
+
+.projeto a {
+    box-shadow: none;
+    border: none;
+    padding: 0;
+}
